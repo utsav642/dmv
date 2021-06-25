@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMV Tech</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li style="color:#ff3152;font-weight:bold">Contact</li>
+            <li>Team</li>
+        </ul>
+    </div>
+
+    <img src="images/cctv.png" class="cctv">
+
+    <div class="front">
+
+        <div class="head">
+            <p>
+                <span style="font-size:5vw;font-weight:bold">DMV Tech Services!</span><br>
+                <span style="font-size: 1.8vw; position:absolute; top: 54%;left:0.5%">Services for Solutions</span>
+            </p>
+        </div>
+
+        <div class="calling">
+            Call Us &nbsp;&nbsp;
+            <img src="icons/calling.png" style="width:3vw;height:auto;">
+        </div>
+
+        <div class="about">
+            <!-- DMV Tech Services is an IT Service provider company, registered in May-2019.<br> -->
+        
+                We are providing IT Services to Personal users as well as various 
+                Corporate sectors like Education, Manufacturing Industries, Facility Service industry, 
+                Civil industry, Architecture Offices.<br>
+
+                <span style="font-weight:bold;text-decoration: underline;">@ PUNE | TALEGOAN | LONAVLA</span>
+        </div>
+
+        <div class="connect">
+            <p style="font-size: 1.2vw;">Connect with us!</p>
+            <img src="icons/facebook.png" style="width:3vw;height:auto;margin-right: 2vw;">
+            <img src="icons/instagram.png" style="width:3vw;height:auto;margin-right: 2vw;">
+            <img src="icons/whatsapp.png" style="width:3vw;height:auto;margin-right: 2vw;">
+        </div>        
+
+    </div>
+
+
+
+
+    <hr size="4" width="76vw" noshade><br>
+
+
+
+
+    <div class="services">
+        <h1>Services We Provide!</h1>
+
+        <div class="previous service" onclick="rotateService(0)">
+            <!-- <button onclick="rotateService(0)">previous</button> -->
+            <img src="images/pc.jpeg" id="previous">
+        </div>
+            
+        <div class="service">
+            <img src="images/pc.jpeg" id="current">
+            <p id="desc" style="color: #ffed7a;font-size: 1.3vw;">
+                
+            </p>
+        </div>
+
+        <div class="next service" onclick="rotateService(1)">
+            <img src="images/pc.jpeg" id="next">
+            <!-- <button onclick="rotateService(1)">next</button> -->
+        </div>
+        
+        <!-- <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/pc.jpeg">
+        </div>
+
+        <div  class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/rfid.jpeg">
+        </div>
+        
+        <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/cctv.webp">
+        </div>
+
+        <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/hardware.jpeg">
+        </div>
+        
+        <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/network.webp">
+        </div>
+
+        <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/ss.jpeg">
+        </div>
+
+        <div class="service">
+            <p style="display:none;color:#ffed7a">
+                Second hand and New Lapops/Desktops Selling!
+            </p>
+            <img src="images/cons.png">
+        </div> -->
+
+        <!-- <img src="images/rfid.jpeg" class="service">
+        <img src="images/cctv.webp" class="service">
+        <img src="images/antiv.jpeg" class="service">
+        <img src="images/ss.jpeg" class="service">
+        <img src="images/cons.png" class="service">
+        <img src="images/network.webp" class="service"> -->
+    </div>
+
+    <br><hr size="4" width="76vw" noshade><br>
+
+    <footer>
+        21 June 2021<br>
+        Responsive web design by utsav642!
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
