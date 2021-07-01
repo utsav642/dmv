@@ -4,7 +4,7 @@ html{
 
 
 body{
-    background-color: #ffed7a;
+    background-color: #F6F6F6; /* #ffed7a; */
     margin: 0;
 }
 
@@ -21,7 +21,8 @@ body{
     padding: 1vw;
     margin-top: 0;
     margin-bottom: 1vw;
-    /* background-color: #2d1152; */
+    background-color: #343a40;
+    color: #f6f6f6;
 }
 
 ul{
@@ -59,8 +60,12 @@ li{
     top: 1vw;
     right: 2vw;
 
-    width: 10vw;
+    width: 6vw;
     height: auto;
+
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    padding: 0.7vw;
 }
 
 
@@ -100,7 +105,7 @@ li{
 }
 
 
-.front{
+#home{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5vw;
@@ -173,11 +178,11 @@ li{
 
 
 
-.services{
+#services{
     box-sizing: border-box;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 2vw;
 
     justify-items: center;
@@ -191,33 +196,35 @@ li{
     padding: 3vw;
 }
 
-.services h1{
+#services h1{
     grid-column: 1/4;
     font-size: 3vw;
     color: white;
     margin: 0;
 }
 
+
 .service img{
     box-sizing: border-box;
 
     width: 100%;
     height: auto;
-    border: 3px solid #ffed7a;
+    border: 3px solid #efefef;
     border-radius: 12px;
 
     /* margin-bottom: 3vw; */
 }
 
 .service img:hover{
-    border: 3px solid #ffed7a;
-    opacity: 0.5;
+    /* border: 3px solid #EFEFEF; */
+    /* opacity: 0.5; */
 }
 
 .previous , .next{
     display: flex;
+    position:relative;
     flex-direction: row;
-    opacity: 0.2;
+    opacity: 0.6;
     /* width: 40%; */
     height: auto;
 
@@ -226,17 +233,86 @@ li{
 
 
 
+
+/*******************************  team  *******************************/
+
+
+
+#team{
+    display: grid;
+    grid-gap: 1.3vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: minmax(140px 140px 140px); */
+    justify-items: center;
+    align-content: center;
+}
+
+#team div{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#team div:first-of-type{
+    grid-column: 1/4;   
+    height:min-content; 
+}
+
+#team div img{
+    width: 16vw;
+}
+
+
+.map{
+    
+}
+
 /*******************************  footer  *******************************/
 
 
 
 footer{
-    padding: 2vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 400px 350px; */
+    grid-gap: 5vw;
+
+    padding: 6vw;
     width: 100%;
     box-sizing: border-box;
     font-size: 1.1em;
     /* font-weight: bold; */
     margin: auto;
-    background-color: #2d1152;
+    background-color: #343a40;
     color: white;
+}
+
+input{
+    display:block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 3vw;
+    border-radius: 12px;
+    margin: 1vw;
+    margin-left: 0;
+    padding:0.5vw;
+    outline: none;
+}
+
+textarea{
+    width: 80%;
+    display:block;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 1vw;
+    margin-left: 0;
+    padding:0.5vw;
+    outline: none
+}
+
+button{
+    width: 20%;
+    height: 3.5vw;
+    font-size: 1.2em;
+    border-radius: 12px;
 }

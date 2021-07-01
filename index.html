@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="navbar">
         <ul>
@@ -26,7 +28,7 @@
 
     <img src="images/cctv.png" class="cctv">
 
-    <div class="front">
+    <div id="home">
 
         <div class="head">
             <p>
@@ -67,12 +69,12 @@
 
 
 
-    <div class="services">
+    <div id="services">
         <h1>Services We Provide!</h1>
 
         <div class="previous service" onclick="rotateService(0)">
-            <!-- <button onclick="rotateService(0)">previous</button> -->
-            <img src="images/pc.jpeg" id="previous">
+            <span style="position:absolute; top:30%;left:40%; font-weight: bold;font-size: 8vw;color: #ffed7a">&lt;</span>
+            <!-- <img src="images/pc.jpeg" id="previous"> -->
         </div>
             
         <div class="service">
@@ -83,19 +85,95 @@
         </div>
 
         <div class="next service" onclick="rotateService(1)">
-            <img src="images/pc.jpeg" id="next">
+            <span style="position:absolute; top:30%;left:40%; font-weight: bold;font-size: 8vw;color: #000">&gt;</span>
+            <!-- <img src="images/pc.jpeg" id="next"> -->
         </div>
     </div>
 
     <br><hr size="4" width="76vw" noshade><br>
 
-    <footer>
-        21 June 2021<br>
-        Responsive web design by utsav642!
 
-        <h2>Add</h2>
+    <div id="team">
+        <div>
+            <h1>Our Team</h1>
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+
+        <div>
+            <img src="images/team.png">
+            Founder
+        </div>
+    </div>
+
+
+    <br><hr size="4" width="76vw" noshade><br>
+
+    <!-- <div>
+        
+    </div>
+     -->
+    <!-- <br><hr size="4" width="76vw" noshade><br> -->
+
+    <footer>
+        <div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!
+                    1m3!1d3752.831995834727!2d75.3400547142885!3d19.8
+                    47060332441036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4
+                    f13.1!4m8!3e6!4m0!4m5!1s0x3bdba395a83a7753%3A0x23
+                    c57fddcb093131!2sTayde%20Home%2C%20Indraprasth%20
+                    Nagar%2C%20Satara%20Deolai%20Parisar%2C%20Auranga
+                    bad%2C%20Maharashtra%20431005!3m2!1d19.8470582!2d
+                    75.3422598!5e0!3m2!1sen!2sin!4v1625105547763!5m2!
+                    1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+            >
+            </iframe>
+            <!-- <h2>Office</h2> -->
+        </div>
+        <div>
+            <h2>Drop us a message/feedback</h2>
+            <input type="text" name="name" placeholder="name">
+            <input type="email" name="email" placeholder="email">
+            <textarea rows="7" placeholder="feedback"></textarea>
+            <button>Send</button>
+            <button>Reset</button>
+        </div>
+        <div>
+            21 June 2021<br>
+            Responsive web design by utsav642!
+        </div>
     </footer>
 
     <script src="index.js"></script>
+
 </body>
 </html>
