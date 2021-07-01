@@ -102,6 +102,12 @@ li{
     .head, .calling, .connet{
         grid-column: 1/4;
     } 
+
+    .title{
+        font-size:60vw;
+        font-weight:bold;
+        color: green;    
+    }
 }
 
 
@@ -123,6 +129,12 @@ li{
     grid-column: 1/3;
     position: relative;
 }
+
+.title{
+    font-size:6vw;
+    font-weight:bold;
+}
+
 
 .calling{
     margin: auto;
