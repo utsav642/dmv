@@ -1,0 +1,115 @@
+h1, h2, h3, h4, h5, h6, p{
+    margin: 12px 0 0 0;
+}
+
+.front{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-gap: 10px;
+
+    height: 60vh;
+    border-radius: 12px;
+    background-color: #141414;
+    padding: 3vw;
+}
+
+.chart{
+    /* background-image: url("./chart.webp"); */
+    /* background-size:cover; */
+    color: #fbfdfe;
+    border-radius: 12px;
+    padding: 2vw;
+
+    justify-self : center;
+    align-self : center;
+}
+
+.chart h2{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.chart p{
+    margin-top: 0;
+    /* font-size: 1em; */
+}
+
+
+.side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+
+    justify-items: center;
+    align-content: center;
+    text-align: justify;
+
+    color: #fbfdfe;
+}
+
+.side div{
+    /* border-right: 0.05px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-self: center;
+    justify-self: center;
+
+    text-align:left;
+    
+}
+
+.side div:nth-child(3){
+    justify-self: right;
+    padding-right: 2vw;
+}
+
+.side div:nth-child(4){
+    justify-self: left;
+    padding-left: 0vw;
+}
+
+@media screen and (min-width: 0px) and (max-width: 540px) {
+    .front{
+        grid-template-columns: 1fr;
+        height: 100vh;
+        width: 100%;
+        grid-gap: 0px;
+    }
+
+    /* .side{
+        grid-template-columns: 1fr;
+    } */
+
+    .side div:nth-child(1){
+        grid-column: 1/3;
+        justify-self:start;
+        padding-right: unset;
+    }
+
+    .side div:nth-child(2){
+        grid-column: 1/3;
+        justify-self:start;
+        padding-right: unset;
+    }
+
+    .side div:nth-child(3){
+        justify-self: center;
+        padding:5vw;
+    }
+    
+    .side div:nth-child(4){
+        justify-self: center;
+        padding:5vw;
+    }
+}
+
+
+@media screen and (min-width: 541px) and (max-width: 1040px) {
+    .front{
+        height: 20vh;
+    }
+}
